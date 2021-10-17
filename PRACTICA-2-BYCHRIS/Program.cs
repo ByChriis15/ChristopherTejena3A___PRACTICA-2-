@@ -64,28 +64,59 @@ namespace PRACTICA_2_BYCHRIS
                 {
                     case 1:
                         Console.Clear();
-                        Console.WriteLine("Numero mayor");
+                        Console.WriteLine("******************Numero mayor******************");
                         Console.WriteLine("Porfavor ingrese dos numeros");
                         int num1 = int.Parse(Console.ReadLine());
                         int num2 = int.Parse(Console.ReadLine());
                         if (num1 > num2)
                         {
-
-                            Console.WriteLine("Del " + num1 + " y " + num2 + " El numero mayor es : " + num1);
+                            if (num1 == num2)
+                            {
+                                Console.WriteLine("Los numeros ingresados son iguales");
+                                Console.WriteLine("Porfavor ingrese numeros diferentes");
+                                
+                            }
+                            else
+                            {
+                                Console.WriteLine("Del " + num1 + " y " + num2 + " El numero mayor es : " + num1);
+                            }
+                            
+                            
                         }
                         else
                         {
                             Console.WriteLine("Del " + num1 + " y " + num2 + " El numero mayor es : " + num2);
                         }
 
+                            Console.WriteLine("Presione enter para volver al menu");
 
-                        //al finalizar preguntar si quiere volver al menu
 
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
 
                     case 2:
-                        Console.WriteLine("Hola");
+                        Console.Clear();
+                        Console.WriteLine("--------------> Numeros pares <--------------");
+
+                        Console.WriteLine("Ingrese un numero para evaluar si es par o no");
+                       
+                        int N1 = int.Parse(Console.ReadLine());
+                            if ((N1 %2) == 0)
+                        {
+                            Console.WriteLine("El numero que ingreso es par");
+                        }
+                            else
+                        {
+                            Console.WriteLine("El numero que ingreso es impar");
+                        }
+
+
+
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 3:
@@ -109,7 +140,25 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 8:
-                        Console.WriteLine("Hola");
+                        Console.Clear();
+                        Console.WriteLine("--------------> Numeros pares <--------------");
+
+                        int Counter = 0;
+
+                        Console.WriteLine("Presione enter para mostrar los multiplos de 7 del 1 al 1000");
+                        Console.ReadKey();
+                        
+
+                        while (Counter<1000)
+                        {
+                            Counter = Counter + 7;
+                            Console.WriteLine(+Counter);
+                        }
+
+
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 9:
@@ -133,7 +182,7 @@ namespace PRACTICA_2_BYCHRIS
 
                 }
 
-                Console.Clear();
+                
             } while (Menu != 0);
 
 
