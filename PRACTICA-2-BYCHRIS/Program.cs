@@ -34,7 +34,7 @@ namespace PRACTICA_2_BYCHRIS
                     Console.WriteLine("*                           7. Tipo de triangulos                                   *");
                     Console.WriteLine("*                           8. Multiplos del 7 del 1 al 1000                        *");
                     Console.WriteLine("*                           9. Promedio                                             *");
-                    Console.WriteLine("*                          10. Volver al Menú                                       *");
+                    Console.WriteLine("*                                                                                   *");
                     Console.WriteLine("*                                                                                   *");
                     Console.WriteLine("*                                                                                   *");
                     Console.WriteLine("*                           0. Salir                                                *");
@@ -120,23 +120,97 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 3:
-                        Console.WriteLine("Hola");
+                        Console.Clear();
+                        Console.WriteLine("--------------> Numero mayor entre tres valores <--------------");
+                        Console.WriteLine("Porfavor ingrese tres numeros");
+                        int n1 = int.Parse(Console.ReadLine());
+                        int n2 = int.Parse(Console.ReadLine());
+                        int n3 = int.Parse(Console.ReadLine());
+                        if (n1 >= n2 && n1>=n3)
+                        {
+                            Console.WriteLine("El numero mayor ingresado es: "+n1);
+                           
+                        }
+                        else
+                        {
+                            if (n2 > n3)
+                            {
+                                Console.WriteLine("El numero mayor ingresado es: " + n2);
+                            }
+                            else
+                            {
+                                Console.WriteLine("El numero mayor ingresado es: " + n3);
+                            }
+                        }
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 4:
-                        Console.WriteLine("Hola");
+
+                        Console.WriteLine("Ingrese los numeros decimales que quiera");
+                        Console.WriteLine("Ingrese un 0 para parar de ingresar");
+
+                        double x = double.Parse(Console.ReadLine());
+                        int Counter1 = 0;
+                        while (x > 0)
+                        {
+                            double x = double.Parse(Console.ReadLine());
+                            if (x > 0 || x < 0)
+                            {
+                                Counter1++;
+                            }
+                           
+                        }
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 5:
-                        Console.WriteLine("Hola");
+                        Console.WriteLine("--------------> Suma de 5 valores <--------------");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        int V1 = int.Parse(Console.ReadLine());
+                        int V2 = int.Parse(Console.ReadLine());
+                        int V3 = int.Parse(Console.ReadLine());
+                        int V4 = int.Parse(Console.ReadLine());
+                        int V5 = int.Parse(Console.ReadLine());
+                        Console.ForegroundColor = ConsoleColor.Black;
+
+                        Console.WriteLine("La suma de los valores ingresados es :");
+
+                        int Suma;
+                        Suma = V1 + V2 + V3 + V4 + V5;
+
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+
+                        Console.WriteLine(V1+" + "+V2+ " + "+V3+ " + "+V4+ " + "+ V5+" = "+Suma);
+
+
+                        Console.ForegroundColor = ConsoleColor.Black;
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 6:
                         Console.WriteLine("Hola");
+
+
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 7:
                         Console.WriteLine("Hola");
+
+
+
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
                     case 8:
@@ -163,12 +237,14 @@ namespace PRACTICA_2_BYCHRIS
 
                     case 9:
                         Console.WriteLine("Hola");
+
+
+
+                        Console.WriteLine("Presione enter para volver al menu");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
 
-                    case 10:
-
-                        Console.WriteLine("Hola");
-                        return;
 
                     case 0:
                         Console.WriteLine("Hasta la Proxima");
