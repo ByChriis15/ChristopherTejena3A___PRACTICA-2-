@@ -195,19 +195,21 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 6:
-                        Console.WriteLine("--------------> Ingreso de valores hasta que se ingrese un 0<--------------");
-                        Console.WriteLine("Ingrese los numeros decimales que quiera");
-                        Console.WriteLine("Ingrese un 0 para parar de ingresar");
-
-                        int VAR = 1;
-                        while (VAR != 0)
+                        Console.WriteLine("--------------> Suma de valores ingresados por usuario <--------------");
+                        Console.WriteLine("Ingrese los numeros que quiera");
+                        
+                        double Dat = 1, suma=0;
+                        while (Dat != 0)
                         {
 
-                            VAR = Int32.Parse(Console.ReadLine());
-
+                            Dat = Convert.ToDouble(Console.ReadLine());
+                            suma = suma + Dat;
 
                         }
-
+                       
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        Console.WriteLine("La suma de los datos ingresados es : "+suma);
+                        Console.ForegroundColor = ConsoleColor.Black;
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
                         Console.Clear();
@@ -249,14 +251,20 @@ namespace PRACTICA_2_BYCHRIS
                         Console.Clear();
                         Console.WriteLine("--------------> Promedio <--------------");
 
-                        int Val = 1;
+                        Console.WriteLine("Ingrese los numeros que quiera");
+
+                        double Val = 1, Sum = 0, Prom;
+                        int contador = 0;
                         while (Val != 0)
                         {
 
-                            Val = Int32.Parse(Console.ReadLine());
-
-
+                            Val = Convert.ToDouble(Console.ReadLine());
+                            Sum = Sum + Val;
+                            contador++;
                         }
+                        Prom = Sum/contador;
+                        Console.WriteLine("");
+                      
 
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
