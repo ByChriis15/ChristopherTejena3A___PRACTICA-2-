@@ -64,7 +64,7 @@ namespace PRACTICA_2_BYCHRIS
                 {
                     case 1:
                         Console.Clear();
-                        Console.WriteLine("******************Numero mayor******************");
+                        Console.WriteLine("--------------> Numeros mayor <--------------");
                         Console.WriteLine("Porfavor ingrese dos numeros");
                         int num1 = int.Parse(Console.ReadLine());
                         int num2 = int.Parse(Console.ReadLine());
@@ -111,9 +111,6 @@ namespace PRACTICA_2_BYCHRIS
                         {
                             Console.WriteLine("El numero que ingreso es impar");
                         }
-
-
-
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
                         Console.Clear();
@@ -203,7 +200,7 @@ namespace PRACTICA_2_BYCHRIS
                         {
 
                             Dat = Convert.ToDouble(Console.ReadLine());
-                            suma = suma + Dat;
+                            suma=suma+Dat;
 
                         }
                        
@@ -216,10 +213,58 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 7:
-                        Console.WriteLine("Hola");
+                        Console.WriteLine("--------------> Tipos de triangulos <--------------");
+                        Console.WriteLine();
+                        
+                        double lado1, lado2, lado3;
+                        string answers;
+                        int Next ;
+                       
+                        
+                        do
+                        {
+                            Console.WriteLine("Ingrese el primer lado del triangulo");
+                            lado1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Ingrese el segundo lado del triangulo");
+                            lado2 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Ingrese el tercer lado del triangulo");
+                            lado3 = int.Parse(Console.ReadLine());
+                            if (lado1 == lado2 && lado1 == lado3)
+                            {
+                                Console.WriteLine("El triángulo ingresado es un equilatero");
+                            } 
+                            else
+                            {
+                                if (lado1 != lado2 && lado1 != lado3 && lado2 != lado3)
+                                {
+                                    Console.WriteLine("El triángulo ingresado es un escaleno");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("El triángulo ingresado es un Isóceles");
+                                }
+                            }
+
+                            do
+                            {
+                                Next = 0;
+                                Console.ForegroundColor = ConsoleColor.DarkCyan;
+                                Console.WriteLine(" ¿Desea volver a calcular un tringulo? ---> Responda S 'Si' || N 'No'  ");
+                                answers = Console.ReadLine();
+                                if (!answers.Equals("S") && !answers.Equals("N"))
+                                {
+                                    Console.ForegroundColor = ConsoleColor.Red;
+                                    Console.WriteLine("Porfavor ingrese una S o N");
+                                    Next = 1;
+                                }
+
+                            } while (Next == 1);
+      
+                        } while (answers.Equals("S"));
 
 
 
+                        Console.ForegroundColor = ConsoleColor.Black;
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
                         Console.Clear();
