@@ -148,21 +148,21 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 4:
-
+                        Console.WriteLine("--------------> Ingreso de valores hasta que se ingrese un 0<--------------");
                         Console.WriteLine("Ingrese los numeros decimales que quiera");
                         Console.WriteLine("Ingrese un 0 para parar de ingresar");
 
-                        double x = double.Parse(Console.ReadLine());
-                        int Counter1 = 0;
-                        while (x > 0)
+                        int VAR = 1;
+                         while( VAR != 0)
                         {
-                            double x = double.Parse(Console.ReadLine());
-                            if (x > 0 || x < 0)
-                            {
-                                Counter1++;
-                            }
-                           
+                            
+                            VAR = Int32.Parse(Console.ReadLine());
+                            
+
                         }
+                        Console.WriteLine("El programa termino");
+                        Console.WriteLine();
+
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
                         Console.Clear();
@@ -195,8 +195,18 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 6:
-                        Console.WriteLine("Hola");
+                        Console.WriteLine("--------------> Ingreso de valores hasta que se ingrese un 0<--------------");
+                        Console.WriteLine("Ingrese los numeros decimales que quiera");
+                        Console.WriteLine("Ingrese un 0 para parar de ingresar");
 
+                        int VAR = 1;
+                        while (VAR != 0)
+                        {
+
+                            VAR = Int32.Parse(Console.ReadLine());
+
+
+                        }
 
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
@@ -236,9 +246,17 @@ namespace PRACTICA_2_BYCHRIS
                         break;
 
                     case 9:
-                        Console.WriteLine("Hola");
+                        Console.Clear();
+                        Console.WriteLine("--------------> Promedio <--------------");
+
+                        int Val = 1;
+                        while (Val != 0)
+                        {
+
+                            Val = Int32.Parse(Console.ReadLine());
 
 
+                        }
 
                         Console.WriteLine("Presione enter para volver al menu");
                         Console.ReadKey();
