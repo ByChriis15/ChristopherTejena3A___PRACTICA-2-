@@ -152,12 +152,12 @@ namespace PRACTICA_2_BYCHRIS
                         Console.WriteLine("Ingrese los numeros decimales que quiera");
                         Console.WriteLine("Ingrese un 0 para parar de ingresar");
 
-                        int VAR = 1;
-                         while( VAR != 0)
+                        double Var = 1;
+                        while (Var != 0)
                         {
-                            
-                            VAR = Int32.Parse(Console.ReadLine());
-                            
+
+                            Var = Convert.ToDouble(Console.ReadLine());
+                           
 
                         }
                         Console.WriteLine("El programa termino");
@@ -263,7 +263,7 @@ namespace PRACTICA_2_BYCHRIS
                             contador++;
                         }
                         Prom = Sum/contador;
-                        Console.WriteLine("");
+                        Console.WriteLine("El promedio de los numeros ingreados  es : "+Prom);
                       
 
                         Console.WriteLine("Presione enter para volver al menu");
